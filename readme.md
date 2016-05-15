@@ -1,4 +1,6 @@
-## Use a MySQL database in a Spring Boot Web Application through Hibernate
+## AngelHack Hackathon Singapore, 2016.
+### Portfolia management, tools  for social volunteers and organization.
+
 
 See here for demo: 
 http://ec2-52-221-238-204.ap-southeast-1.compute.amazonaws.com:8080/index.html#/
