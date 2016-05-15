@@ -1,0 +1,37 @@
+<div class="row">
+ 		<div class="col-xs-3 col-md-2">
+  			<!--  <button type="submit" class="btn btn-info create-new-group">+ Group</button>-->  				
+  				<ul class="nav nav-pills nav-stacked">
+  					<li role="presentation" >
+  						<a href="/index.html#/groups/new" >Create New Group</a>
+  					</li>
+  					<li role="presentation" class="active">
+  						<a href="/index.html#/groups/subscribed" >My Groups</a>
+  					</li>
+  				</ul>
+  		</div>
+ 		<div class="col-xs-12 col-md-8">
+ 				<div class="blog-container">
+				<div class="blog" ng-repeat="group in groups">
+					<div class="jumbotron group-jumobtron">
+  						<div class="container">
+							<h3><a>{{group.title}}</a></h3>
+							<div class="group-desc">
+								{{group.description}}
+								<a href="#">Read more</a>
+							</div>
+							<div class="group-members">
+								Group size {{group.members}}
+							</div>
+							<div class="group-date">
+								Created on {{group.created_on}}
+							</div>
+							<span class="hashtag" ng-repeat="tag in group.tags">
+								{{tag}}
+							</span>
+						</div>
+					</div>
+				</div>
+				</div>
+ 		</div>
+</div>

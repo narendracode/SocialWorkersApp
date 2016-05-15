@@ -1,0 +1,36 @@
+
+<div class="row">
+<div class="blog-search-container">
+	<form class="navbar-form">
+  		<input type="text" class="search-text" placeholder="Keywords">
+  		<input type="text" class="search-location" placeholder="Location">
+  		<button type="submit" class="btn btn-info">Search</button>
+	</form>
+</div>
+</div>
+
+
+<div class="row">
+	<div class="blog-container">
+		<div class="blog" ng-repeat="blog in blogs">
+			<h3><a>{{blog.title}}</a></h3>
+			<p>
+				{{blog.body}}
+			</p>
+			<div>
+			Written by <a>{{blog.writer}}</a> on {{blog.timestamp}}
+			</div>
+	    </div>
+	<div class="pagination">
+  		<ul>
+    		<li><a href="#">Prev</a></li>
+    		<li><a href="#">1</a></li>
+   	 		<li><a href="#">2</a></li>
+    		<li><a href="#">3</a></li>
+    		<li><a href="#">4</a></li>
+    		<li><a href="#">5</a></li>
+    		<li><a href="#">Next</a></li>
+  		</ul>
+	</div>
+	</div>
+</div>
